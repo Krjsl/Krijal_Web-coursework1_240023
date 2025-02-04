@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Elegance Clothin'</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function validateRegisterForm(event) {
+      var username = document.forms["registerForm"]["username"].value;
+      var password = document.forms["registerForm"]["password"].value;
+      var email = document.forms["registerForm"]["email"].value;
+
+      if (username === "" || password === "" || email === "") {
+        alert("Please fill in all fields before submitting.");
+        event.preventDefault(); // Prevent form submission
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Register for Elegance Clothin'</h2>
+    <form action="register.php" method="POST">
+      <input type="text" name="username" placeholder="Username" >
+      <input type="password" name="password" placeholder="Password" >
+      <input type="email" name="email" placeholder="Email" >
+      <button type="submit">Register</button>
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </form>
+  </div>
+</body>
+</html>
+ 
