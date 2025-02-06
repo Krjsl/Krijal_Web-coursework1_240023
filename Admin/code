@@ -1,1 +1,10 @@
-code 
+SQL query here 
+-- creation of table that store admin credentials
+CREATE TABLE admin_users (
+    admin_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    role ENUM('superadmin', 'editor', 'support') NOT NULL DEFAULT 'editor',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
