@@ -1,0 +1,95 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Full-page styling */
+body {
+    background: #121826; /* Dark background for admin feel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Admin Login Box */
+.login-container {
+    background: #1f2a38;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 380px;
+}
+
+/* Admin Login Title */
+h2 {
+    color: #ff4b5c;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Input Field Container */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Labels */
+label {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    background: #0f1b2b;
+    color: white;
+}
+
+/* Input Placeholder Styling */
+input::placeholder {
+    color: #ccc;
+}
+
+/* Admin Login Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff4b5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect for Button */
+.login-btn:hover {
+    background: #e94560;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 400px) {
+    .login-container {
+        width: 90%;
+        padding: 30px;
+    }
+}
