@@ -9,6 +9,8 @@ CREATE TABLE users (
   password VARCHAR(255) NOT NULL,
   email VARCHAR(100) NOT NULL UNIQUE
 );
+ALTER TABLE users ADD COLUMN banned BOOLEAN DEFAULT FALSE;
+
 
 -- Table for products
 CREATE TABLE products (
